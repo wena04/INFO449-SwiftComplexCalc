@@ -138,21 +138,21 @@ let calc = Calculator()
 //: Keep in mind that writing new tests may reveal ambiguity in the specification above--if that's the case, document the ambiguity, declare what you think *should* happen, and write the test to test for it.
 
 // ===== Your tests go here
-// Test 1: check empty array in add returns 0
+// Test 1: adding in empty array returns 0
 calc.add([]) == 0
 
-// Test 2: check empty array in avg returns 0
+// Test 2: averaging an empty array returns 0
 calc.avg([]) == 0
 
-// Test 3: check empty array in multiply returns 0
+// Test 3: multiplying in empty array returns 0
 calc.multiply([]) == 0
 
-// Test 4: check add maps with different keys returns map with all keys
+// Test 4: adding maps with different keys together will return map containing all keys
 let map1 = ["x": -2, "y": 9]
 let map2 = ["y": -2, "z": 4]
 calc.add(lhs: map1, rhs: map2) == ["x": -2, "y": 7, "z": 4]
 
-// Test 5: check avg returns double
+// Test 5: averaging returns double
 calc.avg([2, 2, 3, 4, 5]) == 3.2
 
 //: ---
